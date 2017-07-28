@@ -13,7 +13,11 @@ import javax.xml.ws.WebFault;
 @WebFault(name = "AutorizacaoFault", targetNamespace = "http://ws.estoque.caelum.com.br/")
 public class AutorizacaoFault extends Exception {
     
-    private java.lang.String autorizacaoFault;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private java.lang.String autorizacaoFault;
 
     public AutorizacaoFault() {
         super();
